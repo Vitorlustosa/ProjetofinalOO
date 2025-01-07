@@ -14,7 +14,10 @@ COR_LINHA = (50, 50, 50)
 COR_CELULA_REVELADA = (200, 200, 200)
 COR_TEXTO = (0, 0, 0)
 COR_MINA = (255, 0, 0)
-COR_BANDEIRA = (255, 255, 0)
+COR_BANDEIRA = (255, 255, 0)git add .
+git commit -m "Primeiro commit"
+git push -u origin main
+
 ARQUIVO_VITORIAS = "vitorias.json"
 pygame.init()
 tela = pygame.display.set_mode((LARGURA_TELA, ALTURA_TELA))
