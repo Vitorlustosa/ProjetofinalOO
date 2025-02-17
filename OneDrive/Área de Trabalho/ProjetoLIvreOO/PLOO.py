@@ -14,17 +14,15 @@ COR_LINHA = (50, 50, 50)
 COR_CELULA_REVELADA = (200, 200, 200)
 COR_TEXTO = (0, 0, 0)
 COR_MINA = (255, 0, 0)
-COR_BANDEIRA = (255, 255, 0)git add .
-git commit -m "Primeiro commit"
-git push -u origin main
+COR_BANDEIRA = (255, 255, 0)
 
 ARQUIVO_VITORIAS = "vitorias.json"
 pygame.init()
 tela = pygame.display.set_mode((LARGURA_TELA, ALTURA_TELA))
 pygame.display.set_caption("Campo Minado")
 fonte = pygame.font.Font(None, 36)
-imagem_mina = pygame.image.load("C:\\Users\\PC\\Downloads\\bomba.png")
-imagem_bandeira = pygame.image.load("c:\\Users\\PC\\Downloads\\bandeira.png")
+imagem_mina = pygame.image.load("assets/bomba.png")
+imagem_bandeira = pygame.image.load("assets/bandeira.png")
 imagem_mina = pygame.transform.scale(
     imagem_mina, (TAMANHO_CELULA, TAMANHO_CELULA))
 imagem_bandeira = pygame.transform.scale(
