@@ -3,7 +3,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #5c6cff;
+            background-color: #8a91d1;
         }
 
         .header {
@@ -12,7 +12,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 5px rgba(66, 65, 65, 0.1);
         }
 
         .logo {
@@ -23,11 +23,61 @@
         }
 
         .menu {
-            color: #333;
+            color: #332f2f;
             font-weight: 500;
             cursor: pointer;
         }
 
         .menu:hover {
-            color: #2750d6;
+            color: #4265d8;
+        }
+        .product-carousel {
+            display: flex;
+            overflow-x: hidden; /* Oculta a barra de rolagem */
+            scroll-behavior: smooth;
+            gap: 20px;
+            white-space: nowrap;
+        }
+        
+        .carousel-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .prev, .next {
+            background-color: #463c3c;
+            color: rgb(240, 240, 240);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        
+        .prev { left: 0; }
+        .next { right: 0; }
+        
+        .product {
+            flex: 0 0 auto;
+            width: 300px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(161, 219, 174);
+        }
+        
+        .product img {
+            width: 50%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-section h2 {
+            color: #ececec;
+            font-size: 24px;
+            margin-bottom: 20px;
         }

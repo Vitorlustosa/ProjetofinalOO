@@ -14,9 +14,103 @@
             <img src="imagens/unblogo.png" style="width: 70px; height: auto;">
             <div class="hide-area hide-text-1"></div>
         </div>
-        <div class="logo">OLX</div>
-        <div class="menu">Login</div>
+        <div class="logo">ONBX</div>
+        <div class="menu">Categorias | Login</div>
+    </div>
+    <br>
+    <div class="product-section">
+        <h2>Produtos em Destaque</h2>
+        <br>
+        <div class="carousel-container">
+            <button class="prev" onclick="scrollCarousel(-1)">&#10094;</button>
+            <div class="product-carousel" id="carousel">
+                <div class="product">
+                    <img src="imagens/prod7.jfif" alt="Produto 1">
+                    <h3>Carta</h3>
+                    <p>R$ 100,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="imagens/prod4.jpg" alt="Produto 2">
+                    <h3>Suma T</h3>
+                    <p>R$ 200,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="imagens/prod7.jpg" alt="Produto 3">
+                    <h3>Cabo hdmi</h3>
+                    <p>R$ 30,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="imagens\prod2.jpg" alt="Produto 4">
+                    <h3>Calculo 1 Thomas</h3>
+                    <p>R$ 400,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="imagens/prod3.jpg" alt="Produto 4">
+                    <h3>Produto 4</h3>
+                    <p>R$ 400,00</p>
+                    <button>Comprar</button>
+                </div>
+                
+            </div>
+            <button class="next" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>
+    </div>
+    <br>
+    <br>
 
+    <div class="product-section">
+        <h2>Livros em Destaque</h2>
+        <br>
+        <div class="carousel-container">
+            <button class="prev" onclick="scrollCarousel(-1)">&#10094;</button>
+            <div class="product-carousel" id="carousel">
+                <div class="product">
+                    <img src="imagens/prod5.png" alt="Produto 1">
+                    <h3>Calculo 2 stewart</h3>
+                    <p>R$ 70,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="imagens\prod2.jpg" alt="Produto 2">
+                    <h3>Calculo 1 Thomas</h3>
+                    <p>R$ 69,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="imagens/prod6.jpg" alt="Produto 3">
+                    <h3>Calculo 3 Thomas</h3>
+                    <p>R$ 120,00 </p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="imagens/prod4.jpg" alt="Produto 4">
+                    <h3>Suma T</h3>
+                    <p>R$ 40,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="produto4.jpg" alt="Produto 4">
+                    <h3>Produto 4</h3>
+                    <p>R$ 400,00</p>
+                    <button>Comprar</button>
+                </div>
+                
+            </div>
+            <button class="next" onclick="scrollCarousel(1)">&#10095;</button>
+        </div>
+    </div>
+    
+    <script>
+        function scrollCarousel(direction) {
+            const carousel = document.getElementById("carousel");
+            const scrollAmount = 220; // Ajuste para corresponder ao tamanho do produto + margem
+            carousel.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
+        }
+    </script>
 </body>
 
 </div>
